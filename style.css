@@ -1,0 +1,115 @@
+/*========== IMPORTING SOURCE ===================== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+
+/*====  RESET ============================ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+/*====  VARIABLES ============================ */
+:root {
+  --body-bg-color: hsl(0, 0%, 0%);
+  --cian: hsla(164, 100%, 50%, 0.789);
+}
+
+/*=========== FONTS =============== */
+body, html {
+    font-family: "Poppins", sans-serif;
+    background: var(--body-bg-color);
+}
+
+/*====  LAYOUT ============================ */
+.container {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container .tree-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/*====  PROFILE PICTURE ============================ */
+.tree-container .perfil {
+  width: 213px;
+  height: 213px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid var(--cian);
+  border-radius: 50%;
+}
+
+
+.tree-container .perfil img {
+  width: 200px;
+  height: 200px;
+
+  border-radius: 150px;
+}
+
+/*====  INSTAGRAM PROFILE ============================ */
+.tree-container .insta-user {
+  margin-top: 15px;
+  color: var(--cian);
+}
+
+/*====  LINKS ============================ */
+.tree-container .links-container {
+  margin-top: 17px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.links-container .link {
+  margin-top: 16px;
+
+  width: 325px;
+  border: 2px solid var(--cian);
+  border-radius: 4px;
+
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+
+  
+  padding: 12px 0;
+
+  transition: ease 0.3s;
+}
+
+.links-container .link:hover {
+  background: var(--cian);
+  color: var(--body-bg-color);
+}
+
+/*====  SOCIAL NETWORKS ============================ */ 
+.tree-container .socials-container {
+  margin-top: 40px;
+
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 29px;
+}
+
+.socials-container .social{
+  transform: scale(0.9);
+  transition: ease 0.3s;
+}
+
+.socials-container .social:hover{
+  transform: scale(1);
+}
